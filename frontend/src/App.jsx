@@ -1,11 +1,13 @@
+import { Button, Container, Stack } from "@chakra-ui/react";
+import Navbar from "./components/Navbar";
 function App() {
-  
-
   return (
-    <>
-      <h1> hello </h1>
-    </>
-  )
-}
+    <Stack minH={"100vh"}>
+      <Navbar />
 
+      <Container maxW={"1200px"} my={4}>
+         </Container>
+    </Stack>
+  );
+}
 export default App
