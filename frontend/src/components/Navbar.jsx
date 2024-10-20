@@ -1,6 +1,7 @@
 import { Box, Button, Container, Flex, Text, useColorMode, useColorModeValue} from "@chakra-ui/react";
 import { IoMoon } from "react-icons/io5"; // Asegúrate de importar el icono
 import { LuSun } from "react-icons/lu"; // Asegúrate de importar el icono
+import CreateUserModal from "./CreateUserModal";
 
 const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -24,12 +25,14 @@ const Navbar = () => {
                 {/* right side */}
                 <Flex gap={3} alignItems={"center"}>
                     <Text fontSize={"lg"} fontWeight={500} display={{ base: "none", md: "block"}}>
-                        waos
+                        waos 🔥
                     </Text>
 
                     <Button onClick={toggleColorMode}>
                         {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
                     </Button>
+
+                    <CreateUserModal/>
                 </Flex>
             </Flex>
         </Box>
