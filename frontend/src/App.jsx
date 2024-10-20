@@ -6,7 +6,8 @@ function App() {
       <Navbar />
 
       <Container maxW={"1200px"} my={4}>
-         </Container>
+        
+      </Container>
     </Stack>
   );
 }
