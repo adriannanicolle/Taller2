@@ -1,5 +1,13 @@
+import { Grid } from "@chakra-ui/react";
+
 const UserGrid = ()=> {
-    return <div>UserGrid</div>;
+    return<Grid templateColumns={{
+        base:"1fr",
+        md:"repeat(2, 1fr)",
+        lg:"repeat(3, 1fr)"
+    }}>
+
+    </Grid>
 
 };
 export default UserGrid;

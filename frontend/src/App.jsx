@@ -22,8 +22,7 @@ function App() {
           </Text>
           🐈‍⬛
         </Text>
-        <UserGrid/>
-        
+        <UserGrid />
       </Container>
     </Stack>
   );
